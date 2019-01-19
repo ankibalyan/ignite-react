@@ -4,8 +4,8 @@
   "description": "react starter boilerplate",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --mode development",
-    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development",
+    "build": "NODE_ENV=production webpack --optimize-minimize",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -32,6 +32,7 @@
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.0",
     "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
